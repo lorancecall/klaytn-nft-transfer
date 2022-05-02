@@ -4,13 +4,13 @@
       <h1>Klaytn NFT transfer</h1>
     </div>
     <div class="home">
+      <button @click="connect" type="button">Connect Wallet</button>
       <modal-comp @close="toggleModal" :modalActive="modalActive" />
       <alert-comp @closeAlert="toggleAlert" :alertActive="alertActive">
         <div class="alert-content">
           <p>Kaikas is not installed</p>
         </div>
       </alert-comp>
-      <button @click="connect" type="button">Connect Wallet</button>
     </div>
   </div>
 </template>
